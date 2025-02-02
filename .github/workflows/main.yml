@@ -1,17 +1,14 @@
-#main.yml
-#name: Test Action
+name: Example Workflow
 
-#on:
-#  push:
-#    branches:
-#      - main  # or any branch you want to trigger the action
+on: 
+  push:
+    branches:
+      - main  # This triggers the action on push to the main branch.
 
-#jobs:
-#  test:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Checkout code
-#        uses: actions/checkout@v3
+jobs:
+  test:
+    runs-on: ubuntu-latest
 
-#      - name: 21f3002214@ds.study.iitm.ac.in
-#        run: echo "Hello, world!"
+    steps:
+      - name: 21f3002214@ds.study.iitm.ac.in  # Your required step name containing the email
+        run: echo "Hello, world!"  # Example command; replace with your own logic.
